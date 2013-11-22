@@ -1,0 +1,10 @@
+<h3>New Ritly URL</h3>
+<br>
+
+<p>Enter URL to shorten</p>
+<%= form_for @ritly do |f| %>
+	<%= f.text_field :url  %>
+	<br>
+	<%= f.submit "Create Short URL" %>
+<% end %>
+
