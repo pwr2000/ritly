@@ -29,6 +29,10 @@ class RitsController < ApplicationController
 		redirect_to root_path
 	end	
 
+	def preview
+		@ritly = Rit.find(params[:id])
+	end
+
 	private
 
 	def safe_rit_param
